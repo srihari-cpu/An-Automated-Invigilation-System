@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Faculty login</title>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <div class="main">
+      <a href="https://mrcet.com"
+        ><img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCLbIyhb_IRzHm9vMU6HehPDVQPN4yN1YFZ7rMeZku9f5w4G6ueZIhtylKzL-kCQRHVBc&usqp=CAU"
+          alt="MRCET"
+          class="logo"
+      /></a>
+      <h3>Faculty Login</h3>
+      <form id="loginForm">
+        <label for="username"> Username: </label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="Enter your Username"
+          required
+        />
+
+        <label for="password"> Password: </label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Enter your Password"
+          required
+        />
+        <button type="submit">Login</button>
+      </form>
+      <p>
+        Not registered?
+        <a href="createaccount.html" style="text-decoration: none">
+          Create an account
+        </a>
+      </p>
+    </div>
+
+    <script src="faculty.js"></script>
+  </body>
+</html>

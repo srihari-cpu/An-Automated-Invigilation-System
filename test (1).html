@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exam Invigilation Assignment</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="test.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="icon">
+        <img src="download-removebg-preview (1).png" class="logo" />
+        <h2 class="logo-text">MRCET</h2>
+      </div>
+      <div class="menu">
+        <ul>
+          <li>
+            <a href="Main.html"><abbr title="Main Page">Home</abbr></a>
+          </li>
+          <li>
+            <a href="about.html"><abbr title="details">About</abbr></a>
+          </li>
+          <li>
+            <a href="FacultyList.html"
+              ><abbr title="Faculty list">Faculty</abbr></a
+            >
+          </li>
+          <li>
+            <a href="halls.html"
+              ><abbr title="Examination Halls">Halls</abbr></a
+            >
+          </li>
+          <li>
+            <a href="contact (1).html"><abbr title="Contact">Contact</abbr></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container">
+      <h1 style="color: #007bff">Exam Invigilation Assignment</h1>
+
+      <label for="examDate">Enter Examination Date:</label>
+      <input type="date" id="examDate" />
+
+      <label for="facultyNames">Enter Faculty Names (comma separated):</label>
+      <input
+        type="text"
+        id="facultyNames"
+        placeholder="e.g., Faculty 1, Faculty 2"
+      />
+
+      <label for="hallNames">Enter Hall Names (comma separated):</label>
+      <input type="text" id="hallNames" placeholder="e.g., 2002, 2003, 2004" />
+
+      <label for="blockName">Enter Block Name:</label>
+      <input type="text" id="blockName" placeholder="e.g., Block A" />
+
+      <button onclick="assignInvigilation()">Assign Invigilation</button>
+    </div>
+
+    <script src="test.js"></script>
+  </body>
+</html>
