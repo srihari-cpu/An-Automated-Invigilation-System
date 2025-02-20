@@ -9,7 +9,7 @@ document
 
     // Define valid credentials
     const validUsername = "faculty";
-    const validPassword = "faculty@1343";
+    const validPassword = "faculty123";
 
     // Validate username
     if (username !== validUsername) {
