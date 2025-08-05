@@ -11,6 +11,10 @@
     <link rel="stylesheet" href="navbar.css" />
     <link rel="stylesheet" href="result.css" />
     <style>
+      body {
+        font-family: "Roboto", sans-serif;
+      }
+
       .download-btn {
         display: inline-block;
         margin: 20px auto;
@@ -30,24 +34,32 @@
 
       .container {
         text-align: center;
+        padding: 20px;
       }
 
       table {
         width: 90%;
         margin: 0 auto;
         border-collapse: collapse;
+        table-layout: fixed;
       }
 
       th,
       td {
         border: 1px solid #ccc;
-        padding: 10px;
+        padding: 12px;
         text-align: center;
+        vertical-align: middle;
+        word-break: break-word;
       }
 
       th {
         background-color: #2c3e50;
         color: white;
+      }
+
+      td:nth-child(4) {
+        width: 30%;
       }
     </style>
   </head>
@@ -88,6 +100,7 @@
       <h1>Assignment Results</h1>
       <h2>Your Invigilation Assignments</h2>
 
+      <script src="result.js"></script>
       <!-- ✅ Assignment Table -->
       <table id="assignmentTable">
         <thead>
@@ -98,7 +111,32 @@
             <th>Assigned Faculty</th>
           </tr>
         </thead>
-        <tbody></tbody>
+        <tbody>
+          <tr>
+            <td>2025-08-10</td>
+            <td>Morning</td>
+            <td>A1</td>
+            <td>Dr. Ramesh Kumar</td>
+          </tr>
+          <tr>
+            <td>2025-08-10</td>
+            <td>Afternoon</td>
+            <td>B2</td>
+            <td>Prof. Suma Devi</td>
+          </tr>
+          <tr>
+            <td>2025-08-11</td>
+            <td>Morning</td>
+            <td>C1</td>
+            <td>Dr. Srinivas Reddy</td>
+          </tr>
+          <tr>
+            <td>2025-08-11</td>
+            <td>Afternoon</td>
+            <td>D3</td>
+            <td>Ms. Priya Narayan</td>
+          </tr>
+        </tbody>
       </table>
 
       <!-- ✅ Download as PDF Button -->
@@ -109,7 +147,7 @@
 
     <script src="result.js"></script>
 
-    <!-- ✅ Add html2pdf.js Library -->
+    <!-- ✅ PDF Library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 
     <script>
