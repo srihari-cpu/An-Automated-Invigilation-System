@@ -10,13 +10,53 @@
     />
     <link rel="stylesheet" href="navbar.css" />
     <link rel="stylesheet" href="result.css" />
+    <style>
+      .download-btn {
+        display: inline-block;
+        margin: 20px auto;
+        padding: 10px 20px;
+        background-color: #2c3e50;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: 500;
+        transition: background-color 0.3s ease;
+      }
+
+      .download-btn:hover {
+        background-color: #34495e;
+      }
+
+      .container {
+        text-align: center;
+      }
+
+      table {
+        width: 90%;
+        margin: 0 auto;
+        border-collapse: collapse;
+      }
+
+      th,
+      td {
+        border: 1px solid #ccc;
+        padding: 10px;
+        text-align: center;
+      }
+
+      th {
+        background-color: #2c3e50;
+        color: white;
+      }
+    </style>
   </head>
   <body>
     <div class="navbar">
       <div class="icon">
-        <a href="index.html"
-          ><img src="download-removebg-preview (1).png" class="logo"
-        /></a>
+        <a href="index.html">
+          <img src="download-removebg-preview (1).png" class="logo" />
+        </a>
         <h2 class="logo-text">MRCET</h2>
       </div>
       <div class="menu">
@@ -47,21 +87,45 @@
     <div class="container">
       <h1>Assignment Results</h1>
       <h2>Your Invigilation Assignments</h2>
+
+      <!-- ✅ Assignment Table -->
       <table id="assignmentTable">
         <thead>
           <tr>
             <th>Examination Date</th>
             <th>Session</th>
             <th>Block</th>
-            <th></th>
-            <th></th>
             <th>Assigned Faculty</th>
           </tr>
         </thead>
         <tbody></tbody>
       </table>
+
+      <!-- ✅ Download as PDF Button -->
+      <button class="download-btn" onclick="downloadPDF()">
+        📄 Download as PDF
+      </button>
     </div>
 
     <script src="result.js"></script>
+
+    <!-- ✅ Add html2pdf.js Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+    <script>
+      function downloadPDF() {
+        const element = document.getElementById("assignmentTable");
+
+        const opt = {
+          margin: 0.5,
+          filename: "invigilation_assignments.pdf",
+          image: { type: "jpeg", quality: 0.98 },
+          html2canvas: { scale: 2 },
+          jsPDF: { unit: "in", format: "letter", orientation: "landscape" },
+        };
+
+        html2pdf().set(opt).from(element).save();
+      }
+    </script>
   </body>
 </html>

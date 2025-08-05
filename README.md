@@ -32,7 +32,7 @@
 ## 🛠️ Tech Stack
 
 | Layer       | Technologies             |
-|-------------|--------------------------|
+| ----------- | ------------------------ |
 | 💻 Frontend | HTML, CSS, JavaScript    |
 | 📦 Backend  | None (fully client-side) |
 | 🚀 Hosting  | GitHub Pages             |
@@ -40,6 +40,7 @@
 ---
 
 ## 🗂️ Project Structure
+
 📁 An-Automated-Invigilation-System/
 
 ├── index.html
@@ -50,15 +51,32 @@
 
 └── README.md
 
-
 ---
 
 ## ✅ How It Works
 
-1. Admin loads the interface.
-2. Inputs list of faculty and available rooms.
-3. System schedules invigilation duties and assigns rooms.
-4. Displays or optionally downloads the schedule.
+1. Admin accesses the web interface.
+2. Enters the list of available faculty and rooms.
+3. The system automatically:
+   - Assigns rooms to faculty
+   - Generates a conflict-free invigilation schedule
+4. The final schedule is displayed neatly and can be saved or printed.
+
+---
+
+### 🖼️ Screenshot
+
+<p align="center">
+  <img src="images\HomePage.jpeg" alt="Automated Invigilation Schedule Screenshot" width="700"/>
+  <img src="images\AssignmentPage.jpeg" alt="Automated Invigilation Schedule Screenshot" width="700"/>
+  <img src="images\ResultPage.jpeg" alt="Automated Invigilation Schedule Screenshot" width="700"/>
+  <img src="images\FacultyListpage.jpeg" alt="Automated Invigilation Schedule Screenshot" width="700"/>
+  <img src="images\HallsPage.jpeg" alt="Automated Invigilation Schedule Screenshot" width="700"/>
+  <img src="images\AboutPage.jpeg" alt="Automated Invigilation Schedule Screenshot" width="700"/>
+  <img src="images\ContactPage.jpeg" alt="Automated Invigilation Schedule Screenshot" width="700"/>
+</p>
+
+> 📸 Screenshot shows how the generated schedule looks with auto-assigned faculty and rooms.
 
 ---
 
@@ -78,25 +96,31 @@
 git clone https://github.com/srihari-cpu/An-Automated-Invigilation-System.git
 cd An-Automated-Invigilation-System
 open index.html in your browser
+```
 
+## 🙋‍♂️ Developed By
 
-🙋‍♂️ Developed By
-Srihari, Naveen Reddy, Siddharth Reddy
-🔗 GitHub Profile
+**Srihari, Naveen Reddy, Siddharth Reddy**  
+🔗 [GitHub Profile](https://github.com/srihari-cpu)
 
+## ⭐ Star the Repo
 
-⭐ Star the Repo
-If you find this project helpful, please consider giving it a ⭐ on GitHub!
-👉 https://github.com/srihari-cpu/An-Automated-Invigilation-System
-
+If you find this project helpful, please consider giving it a ⭐ on GitHub!  
+👉 [https://github.com/srihari-cpu/An-Automated-Invigilation-System](https://github.com/srihari-cpu/An-Automated-Invigilation-System)
 
 ---
 
-### ✅ Next Steps
+## 🙏 Thank You
 
-- Copy the above content into a file called `README.md`.
-- Save it inside your project folder.
-- Push the file to your GitHub repo.
-- Optionally, add a screenshot under **“How It Works”** if your project has a visual UI.
+Thank you for checking out **An Automated Invigilation System**!  
+Your time and support are truly appreciated. ❤️
 
-Would you like a screenshot placeholder or additional features like Excel/PDF export listed too?
+If you found this project helpful:
+
+- ⭐ Star the repo
+- 🛠️ Suggest improvements via issues or pull requests
+- 📢 Share it with others who might benefit
+
+Let's keep learning and building cool stuff together! 🚀
+
+**Happy Coding!** 💻✨
