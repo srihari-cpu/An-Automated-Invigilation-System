@@ -1,4 +1,4 @@
-<h1 align="center">🎥 An Automated Invigilation System 🧠</h1>
+<h1 align="center">📅 An Automated Invigilation System 🏫</h1>
 
 <p align="center">
   <img src="https://img.shields.io/github/license/srihari-cpu/An-Automated-Invigilation-System?style=flat-square" />
@@ -7,99 +7,90 @@
 </p>
 
 <p align="center">
-  A smart, AI-powered monitoring system for exam halls and online tests.  
-  This project leverages machine learning and computer vision to detect and alert suspicious activity during exams.  
+  A simple yet effective web-based tool for automating faculty invigilation scheduling.  
+  This system assigns faculty members to exam rooms based on availability and schedule logic, reducing manual effort and human error.
 </p>
 
 ---
 
-## 🚀 Live Demo
+## 🌐 Live Demo
 
-🌐 **Check it out here:**  
-🔗 [An Automated Invigilation System](https://srihari-cpu.github.io/An-Automated-Invigilation-System/)
+🔗 **Try it here:** [An Automated Invigilation System](https://srihari-cpu.github.io/An-Automated-Invigilation-System/)
 
 ---
 
-## 📸 Features
+## ✨ Features
 
-- 🎯 **Face Detection** – Identifies whether multiple faces appear during an exam.
-- 👀 **Eye Tracking** – Tracks eye movement to detect if the candidate is looking away frequently.
-- 📦 **Real-time Alerts** – Sends alerts for suspicious behavior instantly.
-- 📊 **Logs & Reports** – Generates logs for reviewing suspicious cases post-exam.
-- 💻 **Web-based Interface** – Clean, responsive design that runs directly in the browser.
+- 🧑‍🏫 **Faculty Auto-Scheduling**
+- 🏢 **Room Assignment Automation**
+- 🕒 **Eliminates Manual Planning**
+- 📄 **Downloadable Timetable (optional)**
+- 💡 **Lightweight, Fast, and Easy to Use**
 
 ---
 
 ## 🛠️ Tech Stack
 
-| Category        | Tools/Frameworks                         |
-|----------------|------------------------------------------|
-| 👨‍💻 Frontend     | HTML, CSS, JavaScript                    |
-| 🤖 AI Models     | TensorFlow.js, OpenCV.js                 |
-| 🌐 Hosting      | GitHub Pages                             |
-| 🧪 Testing      | Real-time webcam testing in browser      |
+| Layer       | Technologies             |
+|-------------|--------------------------|
+| 💻 Frontend | HTML, CSS, JavaScript    |
+| 📦 Backend  | None (fully client-side) |
+| 🚀 Hosting  | GitHub Pages             |
 
 ---
 
-## 📂 Project Structure
-
+## 🗂️ Project Structure
 📁 An-Automated-Invigilation-System/
-├── 📄 index.html
-├── 📁 assets/
-│ └── 📄 styles.css
-├── 📁 js/
-│ └── 📄 main.js
-├── 📄 README.md
-└── 📄 model.json (optional for ML)
+├── index.html
+├── style.css
+├── script.js
+└── README.md
 
 
 ---
 
-## 🚦 How It Works
+## ✅ How It Works
 
-1. 📷 Accesses your webcam (with permission).
-2. 🔍 Runs face & eye detection algorithms.
-3. ⚠️ Flags anomalies like:
-   - More than one face
-   - Frequent eye movement
-4. 🧾 Logs suspicious activity with timestamp.
-5. 📤 Optionally reports or stores results for review.
+1. Admin loads the interface.
+2. Inputs list of faculty and available rooms.
+3. System schedules invigilation duties and assigns rooms.
+4. Displays or optionally downloads the schedule.
 
 ---
 
-## 💡 Use Cases
+## 📌 Use Case
 
-- 🧑‍🎓 Online exams & proctoring
-- 🏫 Classroom automation
-- 🧪 Research in surveillance or HCI
-- 💼 Corporate interview monitoring
+> Designed for colleges/universities to manage invigilation duty assignments during exams without manual effort.
+
+- ✅ Save faculty time
+- ✅ Avoid scheduling conflicts
+- ✅ Simplify invigilation planning
 
 ---
 
-## 📌 To Run Locally
+## 🚦 To Run Locally
 
 ```bash
 git clone https://github.com/srihari-cpu/An-Automated-Invigilation-System.git
 cd An-Automated-Invigilation-System
 open index.html in your browser
 
-⚠️ Ensure camera access is enabled in your browser.
-
-🌈 Screenshot
-<p align="center"> <img src="https://via.placeholder.com/800x400?text=Project+Screenshot+Here" alt="Screenshot" /> </p>
-(You can update the screenshot by replacing the image URL above with an actual screenshot from your app.)
+🙋‍♂️ Developed By
+Srihari, Naveen Reddy, Siddharth Reddy
+🔗 GitHub Profile
 
 ⭐ Star the Repo
-If you like the project, don't forget to ⭐ the repository:
+If you find this project helpful, please consider giving it a ⭐ on GitHub!
 👉 https://github.com/srihari-cpu/An-Automated-Invigilation-System
 
 
 ---
 
-### ✅ Instructions
+### ✅ Next Steps
 
-1. Copy the above markdown into your project's `README.md` file.
-2. Replace the screenshot link with an actual image hosted online or upload an image to your repo and use a relative link.
-3. Push the file to your GitHub repository.
+- Copy the above content into a file called `README.md`.
+- Save it inside your project folder.
+- Push the file to your GitHub repo.
+- Optionally, add a screenshot under **“How It Works”** if your project has a visual UI.
 
-Let me know if you'd like a version with badges for contributors, issues, forks, or GitHub Actions too!
+Would you like a screenshot placeholder or additional features like Excel/PDF export listed too?
