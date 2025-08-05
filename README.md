@@ -79,9 +79,11 @@ git clone https://github.com/srihari-cpu/An-Automated-Invigilation-System.git
 cd An-Automated-Invigilation-System
 open index.html in your browser
 
+
 🙋‍♂️ Developed By
 Srihari, Naveen Reddy, Siddharth Reddy
 🔗 GitHub Profile
+
 
 ⭐ Star the Repo
 If you find this project helpful, please consider giving it a ⭐ on GitHub!
